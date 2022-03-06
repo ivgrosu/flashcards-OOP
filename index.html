@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Flashcards</h2>
+      <button class="btn-add-question">Add Question</button>
+    </header>
+    <main class="main">
+      <form action="" class="form-container">
+        <p class="error">Cannot add empty values</p>
+        <div class="form-section">
+          <label for="question">Question</label>
+          <textarea
+            name="question"
+            class="question"
+            id="question"
+            cols="40"
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="form-section">
+          <label for="answer">Answer</label>
+          <textarea
+            name="answer"
+            class="answer"
+            id="answer"
+            cols="40"
+            rows="4"
+          ></textarea>
+        </div>
+        <button class="btn-save-question">Save</button>
+
+        <div class="btn-close">&times;</div>
+      </form>
+
+      <div class="cards-container">
+        <div class="flashcards-container"></div>
+      </div>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
